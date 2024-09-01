@@ -10,7 +10,7 @@
         <div class="card shadow-sm rounded p-3">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h4 class="display-6 mb-0 text-success">Products</h4>
+                    <h4 class="display-6 mb-0 text-success">Produits</h4>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end gap-2">
                     <a class="btn btn-success btn-sm rounded-pill shadow-sm" href="{% url 'product-create' %}">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <form class="input-group mt-4" role="search" id="searchform" action="{% url 'item_search_list_view' %}" method="get" accept-charset="utf-8">
-                <input id="searchbox" name="q" type="text" class="form-control border-0 rounded-pill shadow-sm" placeholder="Find products">
+                <input id="searchbox" name="q" type="text" class="form-control border-0 rounded-pill shadow-sm" placeholder="Trouver des produits">
                 <button class="btn btn-outline-success rounded-pill shadow-sm" type="submit">
                     <i class="fa-solid fa-search"></i>
                 </button>
@@ -35,12 +35,12 @@
             <thead class="thead-light">
                 <tr>
                     <th scope="col"><a href="{% querystring table.prefixed_order_by_field=column.order_by_alias.next %}">ID <i class="fa-solid fa-sort"></i></a></th>
-                    <th scope="col">Name <i class="fa-solid fa-sort"></i></th>
-                    <th scope="col">Category <i class="fa-solid fa-sort"></i></th>
-                    <th scope="col">Quantity <i class="fa-solid fa-sort"></i></th>
-                    <th scope="col">Price <i class="fa-solid fa-sort"></i></th>
-                    <th scope="col">Expiring Date <i class="fa-solid fa-sort"></i></th>
-                    <th scope="col">Vendor <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Nom <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Catégorie <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Quantité. <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Prix <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Date d'expiration <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Fournisseurs <i class="fa-solid fa-sort"></i></th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
