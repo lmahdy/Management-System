@@ -316,11 +316,11 @@
 <section class="receipt container-ticket">
     <div class="ticket">
         <div class="head-ticket">
-            <p class="x-bold">InventoryMS</p>
-            <p class="bold">Tom Mboya Street, Tudor</p>
-            <p class="bold">Tel: +2547 00 000000</p>
+            <p class="x-bold">Ooredoolahbibi</p>
+            <p class="bold">Boutique ooredoo , rue 20 mars el fejja mournaguia</p>
+            <p class="bold">Tel: +216 28114406</p>
             <br>
-            <p class="bold">P.O BOX. 90420-80100 MSA</p>
+            <p class="bold">Code Postal: 1153</p>
             <p>Date: {{ sale.date_added|date:"Y/m/d H:i:s" }}</p>
             <p>Receipt code: IMS{{ sale.id }}</p>
             <div class="code-barre">
@@ -381,34 +381,34 @@
                 <div class="hr-sm"></div>
                 <div class="col2">
                     <p>Sub Total</p>
-                    <p class="prix"><b>Ksh {{ sale.sub_total }}</b></p>
+                    <p class="prix"><b>Dt {{ sale.sub_total }}</b></p>
                 </div>
                 <br>
                 <div class="col2">
                     <p>Tax Amount</p>
-                    <p class="prix"><b>Ksh {{ sale.tax_amount }}</b></p>
+                    <p class="prix"><b>Dt {{ sale.tax_amount }}</b></p>
                 </div>
                 <div class="col2">
                     <p>Grand Total</p>
-                    <p class="prix"><b>Ksh {{ sale.grand_total }}</b></p>
+                    <p class="prix"><b>Dt {{ sale.grand_total }}</b></p>
                 </div>
                 <div class="col2">
                     <p>Amount Paid</p>
-                    <p class="prix"><b>Ksh {{ sale.amount_paid }}</b></p>
+                    <p class="prix"><b>Dt {{ sale.amount_paid }}</b></p>
                 </div>
                 <div class="col2">
                     <p>Balance</p>
-                    <p class="prix"><b>Ksh {{ sale.amount_change }}</b></p>
+                    <p class="prix"><b>Dt {{ sale.amount_change }}</b></p>
                 </div>
             </div>
             <div class="hr-lg"></div>
             <div class="carte">
-                <p class="title-carte">Customer: {{ sale.customer.first_name }}</p>
+                <p class="title-carte">Client: {{ sale.customer.first_name }}</p>
             </div>
             <div class="hr-lg"></div>
         </div>
         <div class="footer-ticket">
-            <p class="title-footer">THANK YOU</p>
+            <p class="title-footer">MERCI</p>
         </div>
     </div>
 </section>
