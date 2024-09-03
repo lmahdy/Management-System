@@ -123,20 +123,20 @@ class Purchase(models.Model):
     )
     order_date = models.DateTimeField(auto_now_add=True)
     delivery_date = models.DateTimeField(
-        blank=True, null=True, verbose_name="Delivery Date"
+        blank=True, null=True, verbose_name="Date de livraison"
     )
     quantity = models.PositiveIntegerField(default=0)
     delivery_status = models.CharField(
         choices=DELIVERY_CHOICES,
         max_length=1,
         default="P",
-        verbose_name="Delivery Status",
+        verbose_name="État de livraison",
     )
     price = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         default=0.0,
-        verbose_name="Price per item (Ksh)",
+        verbose_name="Prix par article (DT)",
     )
     total_value = models.DecimalField(max_digits=10, decimal_places=2)
 
