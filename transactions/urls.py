@@ -14,6 +14,7 @@ from .views import (
     SaleDetailView,
     SaleCreateView,
     SaleDeleteView,
+    deleteSale , 
 
     export_sales_to_excel,
     export_purchases_to_excel
@@ -43,6 +44,7 @@ urlpatterns = [
     # Sale URLs
     path('sales/', SaleListView.as_view(), name='saleslist'),
     path('sale/<int:pk>/', SaleDetailView.as_view(), name='sale-detail'),
+    path('delatSale/<int:pk>/', deleteSale, name='delatSale'),
     path('new-sale/', SaleCreateView, name='sale-create'),
     path(
          'sale/<slug:slug>/delete/', SaleDeleteView.as_view(),

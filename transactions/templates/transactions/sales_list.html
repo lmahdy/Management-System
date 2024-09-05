@@ -59,9 +59,12 @@
                 <td>{{ sale.tax_percentage }}</td>
                 <td>{{ sale.amount_paid }}</td>
                 <td>{{ sale.amount_change }}</td>
-                <td>
+                <td class='flex '>
                     <a class="btn btn-outline-info btn-sm" href="{% url 'sale-detail' sale.id %}">
                         <i class="fa-solid fa-eye"></i> View Details
+                    </a>
+                    <a class="btn btn-outline-info btn-sm" href="{% url 'delatSale' sale.id %}">
+                        <i class="fa-solid fa-eye"></i> Delete
                     </a>
                 </td>
             </tr>

@@ -363,3 +363,11 @@ class PurchaseDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         Allow deletion only for superusers.
         """
         return self.request.user.is_superuser
+    
+
+from django.shortcuts import get_object_or_404, render, redirect # type: ignore
+def deleteSale(request ,  pk) :
+    sale = get_object_or_404(Sale, id=pk)
+    sale.delete()
+
+    return render(request , 'transactions/sales_list.html')
