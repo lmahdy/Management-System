@@ -103,6 +103,8 @@ class Vendor(models.Model):
     phone_number = models.BigIntegerField(
         blank=True, null=True, verbose_name='Phone Number'
     )
+    cin = models.CharField(max_length=8, blank=True, null=True)
+    
     address = models.CharField(
         max_length=50, blank=True, null=True, verbose_name='Address'
     )

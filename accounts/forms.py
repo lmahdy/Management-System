@@ -95,13 +95,16 @@ class VendorForm(forms.ModelForm):
     """Form for creating/updating vendor information."""
     class Meta:
         model = Vendor
-        fields = ['name', 'phone_number', 'address']
+        fields = ['name', 'phone_number', 'address','cin']
         widgets = {
             'name': forms.TextInput(
                 attrs={'class': 'form-control', 'placeholder': 'Vendor Name'}
             ),
             'phone_number': forms.NumberInput(
                 attrs={'class': 'form-control', 'placeholder': 'Phone Number'}
+            ),
+            'cin': forms.NumberInput(
+                attrs={'class': 'form-control', 'placeholder': 'cin'}
             ),
             'address': forms.TextInput(
                 attrs={'class': 'form-control', 'placeholder': 'Address'}
