@@ -61,10 +61,10 @@
                 <td>{{ sale.amount_change }}</td>
                 <td class='flex '>
                     <a class="btn btn-outline-info btn-sm" href="{% url 'sale-detail' sale.id %}">
-                        <i class="fa-solid fa-eye"></i> View Details
+                        <i class="fa-solid fa-eye"></i> Voir les détails
                     </a>
-                    <a class="btn btn-outline-info btn-sm" href="{% url 'delatSale' sale.id %}">
-                        <i class="fa-solid fa-eye"></i> Delete
+                    <a class="btn btn-outline-danger btn-sm float-end" href="{% url 'delatSale' sale.id %}">
+                        <i class="fa-solid fa-trash"></i> Supprimer
                     </a>
                 </td>
             </tr>
