@@ -2,7 +2,7 @@
 {% extends 'store/base.html' %}
 {% block content %}
   <div class="container m-5">
-    <h1 class="mb-4">{% if form.instance.pk %}Edit{% else %}Create{% endif %} Customer</h1>
+    <h1 class="mb-4">{% if form.instance.pk %}Modifier{% else %}Créer{% endif %} un client</h1>
     <form method="post">
       {% csrf_token %}
       <div class="row mb-3">
